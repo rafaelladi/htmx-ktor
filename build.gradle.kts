@@ -25,7 +25,7 @@ publishing {
             name = "htmx-ktor"
             url = uri("https://maven.pkg.github.com/rafaelladi/htmx-ktor")
             credentials {
-                username = project.findProperty("gpr.user")?.toString() ?: System.getenv("GITHUB_USER")
+//                username = project.findProperty("gpr.user")?.toString() ?: System.getenv("GITHUB_USER")
                 password = project.findProperty("gpr.key")?.toString() ?: System.getenv("GITHUB_TOKEN")
             }
         }
